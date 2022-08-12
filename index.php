@@ -1,6 +1,6 @@
 <?php
- $db = new PDO("mysql:host=localhost;dbname=ppdb",'root','');
- $query = $db->query('DELETE FROM `calon_siswa` WHERE id = 333');
+ $database = new PDO("mysql:host=localhost;dbname=ppdb",'root','');
+ $query = $database->query("select * from calon_siswa");
 
  while ($data = $query->fetch() ) :?>
     <p>
@@ -13,4 +13,3 @@
         </a>
     </p>
 <?php endwhile ?>
-
