@@ -4,7 +4,7 @@
 
  while ($data = $query->fetch() ) :?>
     <p>
-        <a href="edit.php?id=<?= $data['id']; ?>">
+        <a href="index_edit.php?id=<?= $data['id']; ?>">
             <?= $data['nama'] ?>
         </a>
         
