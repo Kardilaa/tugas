@@ -1,6 +1,8 @@
 <?php
- $database = new PDO("mysql:host=localhost;dbname=ppdb",'root','');
- $query = $database->query("select * from calon_siswa");
+ include"PBO.php";
+$koneksi1 = new koneksi();
+$db =$koneksi1->getkoneksi();
+ $query = $db->query("select * from calon_siswa");
 
  while ($data = $query->fetch() ) :?>
     <p>
